@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "mineight-site",
   "version": "1.0.0",
   "scripts": {
     "webpack": "webpack",

@@ -466,10 +466,14 @@ img{
 	        box-sizing:border-box;
 }
 
+#features{
+	margin-bottom:60px;
+}
+
 .wrapper{
 	overflow:hidden;
-	padding-left:33px;
-	padding-right:33px;
+	padding-left:25px;
+	padding-right:25px;
 	max-width:1205px;
 	margin-left:auto;
 	margin-right:auto;
@@ -491,14 +495,14 @@ img{
 @media(min-width:530px){
 
 .large-hero{
-		margin-bottom:4rem
+		margin-bottom:6rem
 }
 	}
 
 @media(min-width:800px){
 
 .large-hero{
-		margin-bottom:7rem
+		margin-bottom:10rem
 }
 	}
 
@@ -524,3 +528,78 @@ img{
 		margin-right:auto;
 		font-weight:300;
 	}
+
+.row{
+	width:100%;
+	min-height:200px;
+
+
+}
+
+.row::after{
+    	content:"";
+    	clear:both;
+    	display:table;
+    }
+
+@media(min-width:800px){
+		
+		.row__medium-3{
+			display:inline-block;
+			width:24%;
+			height:100%;
+			margin:0 auto;
+		}
+	}
+
+.feature-box{
+	display:inline-block;
+	width:100%;
+	height:50%;
+	float:left;
+	margin-bottom:20px;
+}
+
+@media(min-width:800px){
+
+.feature-box{
+		width:50%
+}
+	}
+
+.feature-box__image{
+		width:100%;
+		height:66.66%;
+		margin:0;
+	}
+
+.feature-box__title{
+		font-weight:400;
+		text-align:center;
+		font-size:1.5rem;
+		margin-bottom:-20px;
+	}
+
+.feature-box__subtitle{
+		text-align:center;
+		font-weight:300;
+		font-size:1rem;
+	}
+
+.site-footer p{
+			text-align:center;
+			width:130px;
+			line-height:2;
+			margin:0 auto;
+		}
+
+.site-footer img{
+			width:20px;
+			height:20px;
+			margin:2px;
+		}
+
+.site-footer__icons{
+			width:100%;
+			margin:0 auto;
+		}

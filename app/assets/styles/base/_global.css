@@ -12,3 +12,7 @@ img{
 *{
 	box-sizing:border-box;
 }
+
+#features{
+	margin-bottom:60px;
+}
