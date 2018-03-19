@@ -7,7 +7,7 @@ gulp.task('watch', function(){
 	//initialize browsersync server
 	browserSync.init({
 		//makes browsersync notifications dissappear
-		notify: false,
+		//notify: false,
 		server:{
 			baseDir:"app"
 		}
