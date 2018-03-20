@@ -2,17 +2,15 @@ body{
 	font-family:'IBM Plex Serif',serif;
 	color:#000;
 	background-color:#FFFDFA;
+	max-width:1800px;
 }
 
-img{
+/*img{
 	max-width: 100%;
 	height:auto;
-}
+}*/
 
 *{
 	box-sizing:border-box;
 }
 
-#features{
-	margin-bottom:60px;
-}
