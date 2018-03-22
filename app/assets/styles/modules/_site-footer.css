@@ -6,7 +6,9 @@
 			line-height:2;
 			margin:0 auto;
 			margin-bottom:25px;
+			font-weight:300;
 		}
+
 
 		img{
 			width:20px;
@@ -19,7 +21,11 @@
 			justify-content:center;
 			width:100%;
 			margin:0 auto;
-			margin-bottom:25px;
+			margin-bottom:40px;
+
+			@mixin atMedium{
+				transform:translateY(-30%);
+			}
 		}
 
 }

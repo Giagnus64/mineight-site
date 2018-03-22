@@ -1,0 +1,155 @@
+.site-header{
+	display:inline-block;
+	width:100%;
+	margin-top:40px;
+	margin-bottom:20px;
+	position:relative;
+
+	&--is-expanded{
+		margin-bottom:60px;
+	}
+
+	@mixin clearFix;
+	
+	&__logo{
+		width:50px;
+		height:50px;
+		text-align:center;
+		background-color:black;
+		color:white;
+		margin:0 auto;
+		margin-bottom:30px;
+
+		@mixin atMedium{
+			margin:0;
+			float:left;
+		}
+		
+		p{
+			display:flex;
+			font-weight:700;
+			font-size:1.65rem;
+			margin:0;
+			justify-content:center;
+			transform:translateY(30%);
+		}
+	}
+
+	&__menu-content{
+		position:absolute;
+		top:10;
+		opacity:0;
+		transform:scale(1.2);
+		transition:all .3s ease-out;
+		z-index:-10;
+		margin-top:30px;
+		display:flex;
+		justify-content:center;
+		width:100%;
+
+		@mixin atMedium{
+		width:auto;
+		height:auto;
+		margin-top:0;
+		opacity:1;
+		z-index:1;
+		transform:scale(1);
+		display:inline-block;
+		float:left;
+		position:absolute;
+		left:50%;
+		transform:translateX(-45%) translateY(-10%);
+
+		}
+
+		&--is-visible{
+			position:absolute;
+			opacity:1;
+			z-index:1;
+			transform:scale(1);
+			transition:all .3s ease-out;
+		}
+	}
+
+	&__menu-icon{
+		width:40px;
+		height:40px;
+		background-color:white;
+		z-index:10;
+		position:absolute;
+		left:50%;
+		transform: translateX(-42%);
+
+		&::before{
+			content:"";
+			position:absolute;
+			top:0;
+			left:0;
+			width:35px;
+			height:2px;
+			background-color:#000;
+			transform-origin:0 0;
+			transition: transform .3s ease-out;
+		}
+
+		&__middle{
+			position:absolute;
+			top:10px;
+			left:0;
+			width:35px;
+			height:2px;
+			background-color:#000;
+			transition: all .3 ease-out;
+			transform-origin:0 50%;
+		}
+
+		&::after{
+			content:"";
+			position:absolute;
+			bottom:17px;
+			left:0;
+			width:35px;
+			height:2px;
+			background-color:#000;
+			transform-origin:0 100%;
+			transition: transform .3s ease-out;
+		}
+
+		@mixin atMedium{
+			display:none;
+		}
+	}
+
+	&__menu-icon--close-x{
+		margin-bottom:40px;
+
+		&::before {
+			transform:rotate(45deg) scaleX(.94);
+		}
+
+		.site-header__menu-icon__middle{
+			opacity:0;
+			transform:scaleX(0);
+		}
+
+		&::after{
+			transform:rotate(-45deg) scaleX(.96) translateY(2px);
+		}
+
+	}
+
+	&__search{
+		position:absolute;
+		top:0;
+		width:100%;
+
+		@mixin atMedium{
+			position:relative;
+			width:18.8%;
+			display:inline-block;
+			float:right;
+			transform:translateY(50%) translateX(0);
+		}
+	}
+
+}
