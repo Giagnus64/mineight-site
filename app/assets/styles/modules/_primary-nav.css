@@ -1,0 +1,41 @@
+.primary-nav{
+	display:inline-block;
+	padding-top:20px;
+
+	ul{
+		margin:0;
+		padding:0;
+		@mixin clearFix;
+	}
+
+	li{
+		list-style:none;
+		padding-right:7px;
+		display:inline-block;
+
+		@mixin atMedium{
+			padding-right:20px;
+			float:left;
+			display:block;
+		}
+	}
+
+	a{
+		color:#FFF;
+		font-weight:300;
+		text-decoration:none;
+		display:block;
+		padding:5px 8px;
+		font-size:.8rem;
+		background-color:$mainGray;
+
+		@mixin atMedium{
+			font-size:1rem;
+			color:#000;
+			text-decoration:underline;
+			padding:12px 0;
+			background-color:transparent;
+		}
+	}
+
+}
