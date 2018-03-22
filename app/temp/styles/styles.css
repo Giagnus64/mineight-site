@@ -754,8 +754,7 @@ body{
 		opacity:0;
 		-webkit-transform:scale(1.2);
 		        transform:scale(1.2);
-		-webkit-transition:all .3s ease-out;
-		transition:all .3s ease-out;
+		/*transition:all .3s ease-out;*/
 		z-index:-10;
 		margin-top:30px;
 		display:-webkit-box;
@@ -790,8 +789,8 @@ body{
 			position:absolute;
 			opacity:1;
 			z-index:1;
-			-webkit-transform:scale(1);
-			        transform:scale(1);
+			-webkit-transform:scale(1) translateX(10px);
+			        transform:scale(1) translateX(10px);
 			-webkit-transition:all .3s ease-out;
 			transition:all .3s ease-out;
 		}
@@ -803,8 +802,8 @@ body{
 		z-index:10;
 		position:absolute;
 		left:50%;
-		-webkit-transform: translateX(-42%);
-		        transform: translateX(-42%);
+		-webkit-transform:translateX(-42%);
+		        transform:translateX(-42%);
 	}
 
 .site-header__menu-icon::before{
@@ -861,6 +860,7 @@ body{
 
 .site-header__menu-icon--close-x{
 		margin-bottom:40px;
+		margin-left:6px;
 
 	}
 
